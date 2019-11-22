@@ -1,4 +1,3 @@
-
 body{
     background-color: #f7f6f5;
     -moz-user-select: none; /*火狐*/
@@ -155,14 +154,14 @@ body{
     border-bottom: 6px solid #57C2CC;
     background:#57C2CC;
 }
-.each_func.server{
+.each_func.hotel{
     color: #E2C353;
 }
-.each_func.shopping{
+.each_func.gift{
     color: #5DDEBB;
 }
 .each_func.app{
-    color: #FF8DB3;
+    color: #EC329D;
 }
 .each_func:before{
     content: " ";
@@ -177,10 +176,10 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-.each_func.server:before{
+.each_func.hotel:before{
     background-image: url(../images/icon_hotel.png);
 }
-.each_func.shopping:before{
+.each_func.gift:before{
     background-image: url(../images/购物商城.png);
 }
 .each_func.app:before{
@@ -215,44 +214,57 @@ body{
     border-color: white;
     background: #f5f5f5;
 }
-.blank{
-    width: 94%;
-    margin-left: 3%;
-    height: 10px;
-    border-bottom: solid #3a3434;
+.block_title{
+    width: 100%;
+    height: 130px;
+    font-size: 55px;
+    color:rgb(27, 25, 25);
+    text-align:center;
+    text-shadow: 10px 7px 10px rgb(235, 121, 14);
+    font-weight:bold;
+    border-bottom-width:5px;
+    border-bottom-style: double;
+    line-height: 130px;
+}
+.maintenance{
+    width: 70%;
+    margin-left: 15%;
+    height: 50px;
+    border-bottom: 1px solid #bebdbd;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight:bold;
+    color: #7D7D7D;  
+}
+.Pay_cost{
+    width: 70%;
+    margin-left: 15%;
+    height: 50px;
+    border-bottom: 1px solid #bebdbd;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight:bold;
+    color: #7D7D7D;  
+}
+.problem_feedback{
+    width: 70%;
+    margin-left: 15%;
+    height: 50px;
+    border-bottom: 1px solid #bebdbd;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight:bold;
+    color: #7D7D7D;  
+}
+.separated{
+    width: 90%;
+    height: 5px;
+    margin-left: 5%;
+    border-bottom: solid #727171;  
     border-bottom-width:3px;
     border-bottom-style: double;
 }
-.server{
-    width: 80%;
-    margin-left: 10%;
-    height: 60px;
-    border-bottom: 2px solid #e5e5e5;
-    line-height: 70px;
-    font-size: 30px;
-    font-weight:bold;
-    color: #7D7D7D;  
-}
-.shopping{
-    width: 80%;
-    margin-left: 10%;
-    height: 60px;
-    border-bottom: 2px solid #e5e5e5;
-    line-height: 70px;
-    font-size: 30px;
-    font-weight:bold;
-    color: #7D7D7D;  
-}
-.communication{
-    width: 80%;
-    margin-left: 10%;
-    height: 60px;
-    border-bottom: 2px solid #e5e5e5;
-    line-height: 70px;
-    font-size: 30px;
-    font-weight:bold;
-    color: #7D7D7D;  
-}
+
 .tool_list{
     position: relative;
     width: 88%;
@@ -292,53 +304,90 @@ body{
          -o-transform: scale(0.98);
             transform: scale(0.98);
 }
-.tool_item.basis_server:before{
-    background-image: url(../images/基础服务.png);
+.tool_item.air_conditioner:before{
+    background-image: url(../images/空调.png);
+    background-size: 50px;
+    background-position: 15px 18px;
+    background-color: rgb(128, 219, 143);
+}
+.tool_item.TV:before{
+    background-image: url(../images/电视机.png);
+    background-size: 50px;
+    background-color: rgb(207, 233, 90);
+}
+.tool_item.water_heater:before{
+    background-image: url(../images/热水器.png);
+    background-size: 50px;
+    background-position: 15px 18px;
+    background-color: rgb(233, 141, 187);
+}
+.tool_item.refrigerator:before{
+    background-image: url(../images/冰箱.png);
+    background-size: 50px;
+    background-color: rgb(121, 204, 231);
+}
+.tool_item.circuit:before{
+    background-image: url(../images/电路.png);
+    background-size: 50px;
+    background-color: rgb(223, 108, 143);
+}
+
+.tool_item.other:before{
+    background-image: url(../images/其他.png);
+    background-size: 50px;
+    background-color: rgb(240, 176, 104);
+}
+
+.tool_item.water:before{
+    background-image: url(../images/水费.png);
+    background-size: 50px;
+    background-position: 15px 18px;
+    background-color: rgb(198, 150, 243);
+}
+.tool_item.electricity:before{
+    background-image: url(../images/电费.png);
+    background-size: 50px;
+    background-color: rgb(243, 234, 109);
+}
+.tool_item.Gas_fee:before{
+    background-image: url(../images/燃气费.png);
+    background-size: 50px;
+    background-position: 15px 18px;
+    background-color: rgb(128, 245, 128);
+}
+.tool_item.property_fee:before{
+    background-image: url(../images/物业费.png);
+    background-size: 50px;
+    background-color: rgb(203, 140, 255);
+}
+.tool_item.heating:before{
+    background-image: url(../images/取暖费.png);
+    background-size: 50px;
+    background-color: rgb(255, 132, 173);
+}
+
+.tool_item.other_fee:before{
+    background-image: url(../images/其他费用.png);
+    background-size: 50px;
+    background-color: rgb(94, 206, 182);
+}
+
+.tool_item.health:before{
+    background-image: url(../images/社区卫生服务.png);
     background-size: 50px;
     background-position: 15px 18px;
     background-color: #ACAFFF;
 }
-.tool_item.life_server:before{
-    background-image: url(../images/生活服务.png);
+.tool_item.service:before{
+    background-image: url(../images/物业服务.png);
     background-size: 50px;
-    background-color: #70EB41;
+    background-color: rgb(145, 228, 112);
 }
-.tool_item.public_server:before{
-    background-image: url(../images/公共服务.png);
+.tool_item.Other_aspects:before{
+    background-image: url(../images/其他服务.png);
     background-size: 50px;
     background-position: 15px 18px;
-    background-color: #8DE9C0;
-}
-
-
-.tool_item.online_shopping:before{
-    background-image: url(../images/在线购物.png);
-    background-size: 50px;
-    background-color: #8CE3FF;
-}
-.tool_item.merchants:before{
-    background-image: url(../images/周边商户.png);
-    background-size: 50px;
-    background-color: #FFD084;
-}
-
-
-.tool_item.community:before{
-    background-image: url(../images/社区论坛.png);
-    background-size: 50px;
-    background-position: 15px 18px;
-    background-color: #ACAFFF;
-}
-.tool_item.transactions:before{
-    background-image: url(../images/二手交易.png);
-    background-size: 50px;
-    background-color: #70EB41;
-}
-.tool_item.activity:before{
-    background-image: url(../images/活动发起.png);
-    background-size: 50px;
-    background-position: 15px 18px;
-    background-color: #8DE9C0;
+    background-color: rgb(236, 201, 126);
 }
 
 
@@ -358,7 +407,6 @@ body{
     position: absolute;
     top: 13px;
     left: 73px;
-    font-size: 15px;
     color: #191919;
 }
 .app_dec{
@@ -483,8 +531,7 @@ body{
 }
 
 .bottom_phone_content{
-    width: 100%;
-    font-size: 20px;
+	width: 100%;
 	text-align: center;
 	position: relative;
 	top: 7px;
