@@ -1,0 +1,649 @@
+*, *:after, *:before {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+/*head nav*/
+
+/*img slide*/
+.img_slide{
+	width: 100%;
+	height: 220px;
+	position: relative;
+}
+.show_slide{
+	width: 100%;
+	height: 100%;
+}
+.cover_img{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	position: relative;
+	z-index: 3;
+	
+
+}
+.img_slide_count{
+	position: absolute;
+	bottom: 7px;
+	right: 20px;
+	color: #fff;
+	z-index: 3;
+	text-shodow: 1px 1px 2px #d3d3d3;
+}
+.current_img{
+	color: #fff;
+	text-shodow: 1px 1px 2px #d3d3d3;
+
+}
+
+.panorama_section{
+	position: absolute;
+	bottom: 18px;
+	left: 18px;
+	z-index: 3;
+	width: 105px;
+	height: 32px;
+	line-height: 32px;
+	background: #57C2CC;
+	border-radius: 5px;
+	color: #fff;
+	text-align: center;
+	display: block;
+}
+.panorama_section.touched{
+    -webkit-transform: scale(0.85,0.85);
+        -ms-transform: scale(0.85,0.85);
+         -o-transform: scale(0.85,0.85);
+            transform: scale(0.85,0.85);
+}
+.attention_btn{
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	z-index: 3;
+	border: 1px solid #d3d3d3;
+	background: #fff;
+}
+
+
+/*head details preview*/
+.head_details_section{
+	height: 110px;
+	background: #fff;
+	border: 1px solid #DFDFDF;
+	position: relative;
+	padding: 20px 25px;
+}
+.tag_icon{
+	display: block;
+	width: 26px;
+	height: 25px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+.price_tag_icon{
+	background-image: url(../images/price_tag.png);
+	width: 22px;
+}
+.detail_price{
+	display: inline-block;
+	color: #ff6699;
+	position: relative;
+	margin-left: 30px;
+}
+.detail_table_dec{
+	display: inline-block;
+	color: rgb(121, 176, 250);
+	position: relative;
+	margin-left: 30px;
+}
+.detail_price_number{
+	color:#C5A70A;
+	font-size:18px;
+	margin-right: 2px;
+}
+
+.detail_icon_section{
+	position: absolute;
+	right: 20px;
+	top: 23px;
+}
+.each_icon{
+	display: inline-block;
+	width: 34px;
+	height: 17px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.icon_360{
+	background-image: url(../images/icon_360.png);
+}
+.icon_activity{
+	background-image: url(../images/icon_activity.png);
+}
+.icon_gift{
+	background-image: url(../images/icon_gift.png);
+}
+.icon_tuan{
+	background-image: url(../images/icon_tuan.png);
+}
+
+.detail_table_info{
+	margin: 5px 0;
+
+}
+.table_tag_icon{
+	background-image: url(../images/table_tag.png);
+	width: 22px;
+}
+.detail_table{
+	display: block;
+	color: rgb(121, 176, 250);
+	position: absolute;
+	left: 35px;
+	top: 0;
+	line-height: 50px;
+}
+.detail_table p{
+	width: 180px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.detail_table_number{
+	color: #57C2CC;
+	font-size: 18px;
+	margin-right: 2px;
+}
+.detail_other_info{
+	width: 300px;
+	text-align: center;
+	margin: -67px auto 0;
+	display: box;
+	display: -webkit-box;
+}
+.detail_other_info li{
+	position: relative;
+	box-flex: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -o-box-flex: 1;
+	text-align: center;
+	border-right: 1px solid #d3d3d3;
+	display: block;
+	margin: 0 -3px;
+}
+.detail_other_info .last_detail_info{
+	border-right: none;
+}
+.detail_other_info .number_info{
+	font-size: 20px;
+	color: rgb(165, 165, 165);
+}
+.detail_other_info .word_dec{
+	color: rgb(165, 165, 165);
+}
+
+/*标签*/
+.tip_instruction{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 6;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.74);
+    display: none;
+}
+.tip_instruction_center_content{
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+}
+.tip_instruction_title{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #DDD9D9;
+    height: 45px;
+    margin-top: 10px;
+}
+.tip_instruction_list{
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  border-top: 1px solid #808080;
+  position: relative;
+
+}
+.tip_instruction_icon{
+  display: inline-block;
+  width: 39px;
+  height: 20px;
+  background-size: cover;
+  position: absolute;
+  top: 14px;
+  left: 9px;
+}
+.tip_instruction_dec{
+  color: #DDD9D9;
+  position: absolute;
+  top: 13px;
+  left: 60px;
+  width: 77%;
+}
+.close_tip_icon{
+
+}
+
+/*section content*/
+.detail_no_left{
+	left: 0;
+}
+.hotel_main_content{
+	margin-top: 40px;
+	overflow-x: hidden;
+}
+.section_content{
+	background: #fff;
+	border: 1px solid #EDEDED;
+	position: relative;
+	padding: 0 0 0 25px;
+	margin: 21px 0;
+}
+.hotel_phone_icon{
+	background-image: url(../images/hotel_info_phone.png);
+	width: 21px;
+}
+.change_red_color{
+	color: #BD9F04;
+	font-size: 15px;
+	margin-left: 5px;
+}
+
+.small_title_content{
+	border-top: 1px solid #EFEFEF;
+	padding: 10px 20px 10px 0;
+	position: relative;
+}
+.service_title_content{
+	border-top: 1px solid #EFEFEF;
+	padding: 10px 20px 10px 0;
+	position: relative;
+	height: 30px;
+}
+.service_title_content.touched{
+	box-shadow: 0 0 15px rgba(68, 127, 152, 0.27);
+}
+.small_title_content.touched{
+	box-shadow: 0 0 15px rgba(68, 127, 152, 0.27);
+}
+.wedding_detaial.touched{
+	box-shadow: 0 0 15px rgba(68, 127, 152, 0.27);
+}
+.more_detail_content{
+	position: absolute;
+	right: 18px;
+	top: 0px;
+	width: 62px;
+	height: 100%;
+}
+.more_detail_content.touched{
+	box-shadow: 0 0 15px rgba(68, 127, 152, 0.27);
+}
+.more_detail_content.large{
+	height: 98px;
+	width: 100%;
+}
+.no-border_top{
+	border: none;
+}
+.hotel_location_icon{
+	background-image: url(../images/hotel_info_location.png);
+}
+.detail_dec{
+	position: relative;
+	top: 2px;
+}
+.detail_name{
+	font-size: 15px;
+	color: black;
+}
+.instruction_dec{
+	color: #9E9E9E;
+	margin-top: 2px;
+}
+.more_detail_arrow{
+	position: absolute;
+	right: 0px;
+	top: 16px;
+	width: 9px;
+	height: 16px;
+	background-image: url(../images/hotel_info_arrow.png);
+	background-size: cover;
+}
+.more_detail{
+	position: absolute;
+	right: 20px;
+	top: 0px;
+	color: #57C2CC;
+	height: 100%;
+	line-height: 50px;
+}
+.hotel_tuan_icon{
+	background-image: url(../images/hotel_info_tuan.png);
+}
+.hotel_service_icon{
+	background-image: url(../images/hotel_info_service.png);
+}
+.detail_service_dec{
+	top: -5px;
+}
+
+.hotel_comment_icon{
+	background-image: url(../images/hotel_info_comment.png);
+	top: 16px;
+	width: 21px;
+	left: 2px;
+}
+.good_comment{
+	color: #C8C8C8;
+	margin-left: 7px;
+}
+.good_comment_per{
+	font-size: 14px;
+	margin: 0px;
+}
+.hotel_classity{
+	margin-left: 7px;
+}
+.instruction_detail{
+	margin-top: 10px;
+	padding: 0 0 15px 6px;
+	color: #9E9E9E;
+	font-size: 15px;
+	text-indent: 2em;
+}
+
+.more_dec_btn{
+	border: 1px solid rgb(12, 189, 221);
+	color: rgb(12, 189, 221);
+	width: 76px;
+	height: 22px;
+	line-height: 22px;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 4px;
+	position: relative;
+	z-index: 4;
+}
+.more_dec_btn.touched{
+	 color: #73E7FC;
+	 border: 1px solid #73E7FC;
+    -webkit-transform: scale(0.85,0.85);
+        -ms-transform: scale(0.85,0.85);
+         -o-transform: scale(0.85,0.85);
+            transform: scale(0.85,0.85);
+}
+.hotel_img{
+	width: 120px;
+	height: 80px;
+	background-size: cover;
+	float: left;
+}
+.wedding_hotel_base{
+	width: 128px;
+	height: 125px;
+	float: left;
+	margin-left: 10px;
+}
+.wedding_level{
+	position: absolute;
+	font-size: 12px;
+	top: 18px;
+	left: 0;
+}
+.wedding_title{
+	margin-bottom: 9px;
+	position: relative;
+	top: 0px;
+	width: 90px;
+	height: 34px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.wedding_hotel_base p{
+	margin-top: 2px;
+}
+.order_hotel_now{
+	width: 90px;
+	height: 28px;
+	line-height: 28px;
+	background: #57C2CC;
+	position: absolute;
+	right: 18px;
+	bottom: 16px;
+	text-align: center;
+	color: #fff;
+	border-radius: 3px;
+	z-index: 3;
+}
+.order_hotel_now.touched{
+	 background: #ff84ad;
+    -webkit-transform: scale(0.96);
+        -ms-transform: scale(0.96);
+         -o-transform: scale(0.96);
+            transform: scale(0.96);
+}
+.other_situation{
+	top: 12px;
+}
+.detail_situation{
+	line-height: 39px;
+}
+
+.wedding_table_title{
+	top: 0px;
+}
+.wedding_arrow{
+	top: 12px;
+}
+.wedding_price_content{
+	position: absolute;
+	right: 90px;
+	top: 0px;
+	height: 100%;
+	line-height: 50px;
+	color: #FC8EB3;
+}
+.wedding_money{
+	color: #FC8EB3;
+	font-size: 16px;
+}
+.other_price_content{
+	right: 50px;
+}
+.send_wrong{
+	padding:0 50px;
+	text-align: right;
+	color: rgb(68, 189, 224);
+	padding-bottom: 20px;
+	/*margin-bottom: 220px;*/
+}
+
+/*more instruction*/
+.show_more_instruction{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: rgba(0, 0, 0, 0.85);
+	z-index: 6;
+	display: none;
+}
+.more_detail_instruction{
+	padding: 15px 30px;
+	position: relative;
+	z-index: 8;
+}
+.detail_instruction_title{
+	color: #FFF;
+	text-align: center;
+	border-bottom: 1px solid #B0B0B0;
+	padding-bottom: 10px;
+	font-size: 16px;
+}
+.detail_instruction_small_title{
+	margin: 15px 0;
+}
+.instruction_hotel_classity{
+	color: #fff;
+}
+.detail_instruction_dec{
+	text-indent: 2em;
+	color: #FFF;
+	height: 250px;
+	overflow: auto;
+}
+.comment_say{
+	margin: 20px 0;
+	color: #fff;
+}
+.close_more_instruction_icon{
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	z-index: 10;
+	width: 27px;
+	height: 27px;
+	margin-left: -17px;
+	background-image: url(../images/close_icon.png);
+	background-size: cover;
+}
+.clear_area{
+	height: 45px;
+	width: 100%;
+}
+
+/*full screen slide*/
+.full_screen_content{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background: black;
+}
+.close_full_screen{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 12;
+	width: 25px;
+	height: 25px;
+	background-size: cover;
+	background-image: url(../images/close_icon.png);
+}
+.full_screen_slide{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 220px;
+	margin-top: -113px;
+}
+.show_full_slide{
+	width: 100%;
+	height: 100%;
+}
+.full_screen_img{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+.full_screen_hotel_content{
+	position: absolute;
+	bottom: 23px;
+	left: 20px;
+	width: 280px;
+}
+.full_screen_hotel_info{
+
+}
+.full_screen_hotel_dec{
+	font-size: 12px;
+	color: #B2B2B2;
+	position: absolute;
+}
+.full_screen_hotel_addr{
+	font-size: 12px;
+	color: #fff;
+}
+.full_screen_hotel_name{
+	font-size: 12px;
+	color: #fff;
+	margin-left: 6px;
+}
+.full_slide_img_count{
+	position: absolute;
+	bottom: 27px;
+	right: 20px;
+}
+.full_slide_current_img,.full_slide_all_img{
+	color: #fff;
+	font-size: 12px;
+}
+
+.bottom_section_center{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -o-box;
+	/*border-top: 1px solid #E2E2E2;*/
+	z-index: 5;
+	background: #57C2CC;
+}
+.bottom_icon{
+	text-align: center;
+	color: #fff;
+	background-size: 19px;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-right: 1px solid #A0B5B6;
+	display: block;
+	box-flex: 1;
+	-webkit-box-flex: 1;
+	   -moz-box-flex: 1;
+	     -o-box-flex: 1;
+}
+.bottom_icon.touched{
+	box-shadow: 0 0 15px rgba(68, 127, 152, 0.27);
+}
+.date_icon{
+	background-image: url(../images/footer_date_btn.png);
+}
+.order_icon{
+	background-image: url(../images/footer_order.png);
+}
+.hot_phone_icon{
+	background-image: url(../images/footer_phone.png);
+}
+.mark_point{
+	width:100%;
+	height:44px;
+}
+

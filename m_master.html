@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>社区生活助手</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="red-translucent" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" href="css/swiper.css">
+<link rel="stylesheet" href="css/m_common.css">
+<link rel="stylesheet" href="css/m_master.css">
+<link rel="stylesheet" href="css/m_footer_nav.css">
+</head>
+<body>
+	<!-- head nav -->
+	<header class="head_nav">
+		<div class="turn_back touch"></div>
+		<div class="head_title">刘师傅</div>
+	</header>
+
+	<div class="hotel_main_content">
+		<!-- img slide -->
+		<div class="img_slide">
+	        <div class="swiper-container show_slide">
+	             <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cover_img"  style="background:#dddddd;" >
+								<img src="images/photo1.png">
+							</div>							
+                        </div>
+	             </div>
+	   	    </div>
+			<a href="javascript:;" class="panorama_section touch" onclick="submitOrder()">下订单</a>
+	   	    <!-- <div class="attention_btn"></div>-->
+		</div>
+
+		<!-- head details preview -->
+		<div class="head_details_section">
+			<div class="">
+				<div class="tag_icon price_tag_icon"></div>
+				<div class="detail_price"><span class="detail_price_number">服务范围：芝罘区</span></div>
+			</div>
+			<div class="detail_icon_section">
+		</div>
+			<div class="detail_table_info">
+				<div class="tag_icon table_tag_icon"></div>
+				<div class="detail_table_dec"><span class="detail_table_number">经验：1-3</span></div>
+			</div>
+		</div>
+		<ul class="detail_other_info">
+				<li>
+					<div class="number_info">200</div>
+					<div class="word_dec">浏览</div>
+				</li>
+				<li>
+					<div class="number_info">200</div>
+					<div class="word_dec">评论</div>
+				</li>
+				<li class="last_detail_info">
+					<div class="number_info">100</div>
+					<div class="word_dec">订单</div>
+				</li>
+		</ul>
+
+		<!--hotel section content -->
+		<div class="section_content">
+			<div class="service_title_content no-border_top touch ">
+				<a href="tel://15915832580" class="a_link"><div class="tag_icon hotel_phone_icon"></div></a>
+				<div class="detail_table">
+					<span class="detail_name">联系方式</span>
+					<span class="change_red_color"><a href="tel://15915832580" class="change_red_color">15915832580</a></span>
+				</div>
+			</div>
+			<div class="service_title_content touch" onclick="openMap(${hotel.latitude }, ${hotel.longitude}, '${hotel.name }', '${hotel.address}')">
+				<div class="tag_icon hotel_location_icon"></div>
+				<div class="detail_table">
+					<p><span class="detail_name">现在所在地</span></p>
+					<!-- <p class="instruction_dec"></p> -->
+				</div>
+				<div class="more_detail_content">
+					<div class="more_detail_arrow"></div>
+					<div class="more_detail">地图</div>
+				</div>
+			</div>
+			<div class="service_title_content touch" onclick="openComment()">
+				<div class="tag_icon hotel_comment_icon"></div>
+				<div class="detail_table">
+					<p>
+						<span class="detail_name detail_dec">评论(</span>
+						<span class="detail_name detail_dec comment_number">200</span>
+						<span class="detail_name detail_dec">)</span>
+						<span class="good_comment detail_dec">好评率</span>
+						<span class="change_red_color good_comment_per detail_dec">60%</span>
+					</p>
+				</div>
+				<div class="more_detail_content">
+					<div class="more_detail_arrow"></div>
+					<div class="more_detail">详情</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- section content -->
+		<div class="section_content">
+			<div class="service_title_content no-border_top">
+				<div class="detail_table detail_no_left"><span class="detail_name">详细介绍</span></div>
+			</div>
+			<div class="small_title_content">
+				<div class="">
+                    <span class="instruction_dec hotel_classity">芝罘区</span>
+                    <span class="instruction_dec hotel_classity">1-3年</span>
+				</div>
+				<div class="instruction_detail">这里是维修师傅介绍</div>
+				<div class="more_dec_btn touch">更多介绍</div>
+			</div>
+		</div>
+
+		<!--section content -->
+		<div class="section_content">
+			<div class="service_title_content no-border_top">
+				<div class="detail_table detail_no_left"><span class="detail_name">热门预约师傅</span></div>
+			</div>
+			<div class="small_title_content">
+				<div class="hotel_img  wedding_hotel_img1" style="background:#dddddd"></div>
+				<div class="wedding_hotel_base">
+					<div class="wedding_title">
+						<span class="detail_name">林师傅</span>
+					</div>
+					<p class="instruction_dec "><span class="instruction_dec">芝罘区</span></p>
+					<p class="instruction_dec ">经验：<span class="instruction_dec">2-4</span></p>
+				</div>
+				<div class="clear_float"></div>
+				<div class="order_hotel_now touch" onclick="submitOrder()">下订单</div>
+				<div class="more_detail_content touch large" onclick="openBanquetHall(${hotel.id}, ${banquetHall.id })">
+					<div class="more_detail_arrow other_situation"></div>
+					<div class="more_detail detail_situation">详情</div>
+				</div>
+			</div>
+			<div class="small_title_content">
+				<div class="hotel_img  wedding_hotel_img1" style="background:#dddddd"></div>
+				<div class="wedding_hotel_base">
+					<div class="wedding_title">
+						<span class="detail_name">林师傅</span>
+					</div>
+					<p class="instruction_dec "><span class="instruction_dec">芝罘区</span></p>
+					<p class="instruction_dec ">经验：<span class="instruction_dec">2-4</span></p>
+				</div>
+				<div class="clear_float"></div>
+				<div class="order_hotel_now touch" onclick="submitOrder()">下订单</div>
+				<div class="more_detail_content touch large" onclick="openBanquetHall(${hotel.id}, ${banquetHall.id })">
+					<div class="more_detail_arrow other_situation"></div>
+					<div class="more_detail detail_situation">详情</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mark_point"></div>
+
+	</div>
+
+	<!-- 更多内容 -->
+	<div class="show_more_instruction">
+		<div class="more_detail_instruction">
+			<div class="detail_instruction_title">师傅介绍</div>
+			<div class="detail_instruction_small_title">
+                <span class="instruction_hotel_classity">芝罘区</span>
+                <span class="instruction_hotel_classity">经验：1-2年</span>
+			</div>
+			<div class="detail_instruction_dec">
+				挺好的
+			</div>
+			<div class="comment_say">小编点评：还行还行</div>
+		</div>
+		<div class="close_more_instruction_icon"></div>
+	</div>
+
+	<div class="bottom_section">
+		<div class="bottom_section_center">
+		    <a href="m_order.html" class="bottom_icon  touch">我的订单</a>
+		    <a href="m_master_comment.html" class="bottom_icon  touch">评论</a>
+			<a href="" class="bottom_icon  touch">热线</a>
+		</div>
+	</div>
+
+	<!--footer-->
+	<div class="bottom_nav_content">
+		<a class="bottom_link go_index touch" href="m_index.html">首页</a>
+		<a class="feedback_link" href="/m/hotel/userFeedback">意见反馈</a>
+		<a class="bottom_link top_link touch">TOP</a>
+		<a class="bottom_download_content touch" href=''>
+			<div class="download_app_icon"></div>
+			<div class="download_title">社区服务助手app</div>
+			<div class="now_download">立即下载</div>
+		</a>
+		<div class="bottom_phone_content">免费咨询热线 :<a class="tel_number" href="tel://17865500000">17865500000</a></div>
+		<div class="bottom_remark">@2018 社区O2O助手 鲁ICP备&nbsp;xxxxx号-x</div>
+		<div align="center">
+		<img src="images/photo2.jpg" width="1860" height="260"/></div>
+	
+	</div>
+
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/idangerous.swiper.min.js"></script>
+<script src="js/Touch.js"></script>
+<script src="js/m_warn_pop_box.js"></script>
+<script src="js/m_master.js"></script>
+<script src="js/m_url.js"></script>
+<script src="js/m_footer_nav.js"></script>
+</html>

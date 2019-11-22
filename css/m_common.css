@@ -1,0 +1,120 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+	font-size:14px;
+	background-color: #F7F7F7;
+}
+input,select{
+  -webkit-appearance: none;
+}
+::-webkit-input-placeholder {
+   font-size: 12px;
+}
+::-moz-placeholder {
+    font-size: 12px;
+}
+::-moz-placeholder {
+    font-size: 12px;
+}
+::-ms-input-placeholder {
+   font-size: 12px;
+}
+ul,ul li{
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+}
+p,h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+	font-size:14px;
+	color: #666666;
+}
+a,span,div,button{
+	text-decoration:none;
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+	font-size:14px;
+	color: #666666;
+}
+img{
+	display:white;
+}
+.clear_float{
+	clear: both;
+}
+.a_link{
+	width: 100%;
+	height: 100%;
+}
+.main_content{
+	margin: 40px 0  80px 0;
+}
+/*allen touch*/
+.touch{
+    -webkit-transition: all .1s ease-in-out;
+         -o-transition: all .1s ease-in-out;
+            transition: all .1s ease-in-out;
+}
+*, *:after, *:before {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+/*head nav*/
+.head_nav{
+	width: 100%;
+	height: 60px;
+	background: #57C2CC;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 5;
+}
+.turn_back{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 40px;
+	height: 100%;
+	background: url(../images/toolbar_back_mobile.png) center no-repeat;
+	background-size: 15px;
+    border-radius: 4px;
+}
+.turn_back.touched{
+    background-color: #ff8eb4;
+    -webkit-transform: scale(0.85,0.85);
+        -ms-transform: scale(0.85,0.85);
+         -o-transform: scale(0.85,0.85);
+            transform: scale(0.85,0.85);
+}
+.head_title{
+	width: 100%;
+	height: 100%;
+	line-height: 60px;
+    font-size: 35px;
+	text-align: center;
+	color: #fff;
+}
+.head_right{
+	position: absolute;
+	right: 20px;
+	top:50%;
+	width: 16px;
+	height: 24px;
+	margin-top: -12px;
+	background-image: url(../images/topbar_share_btn.png);
+	background-size: cover;
+}
+.head_right.touched{
+    -webkit-transform: scale(0.85,0.85);
+        -ms-transform: scale(0.85,0.85);
+         -o-transform: scale(0.85,0.85);
+            transform: scale(0.85,0.85);
+}
+.flt_btn{
+    display: box;
+}
+
