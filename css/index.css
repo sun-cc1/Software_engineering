@@ -1,13 +1,13 @@
-﻿body{
-	background: url('index.jpg') ;
+﻿*{margin: 0;padding: 0;list-style: none;}
+body{
+	background: url('../images/index.jpg') ;
     background-size: 100%; 
 }
 .container{
 	width: 1200px;
 	height: 870px;
 	margin: 0 auto;
-
-
+/* 	background: #ccc; */
 }
 /* 导航 */
 .nav{
@@ -60,6 +60,21 @@
 	text-align: center;
 	padding: 20px;
 }
+.login{
+	display: block;
+  	margin: 0 auto;
+	font-size:25px;
+	text-align:center;
+  	width: 240px;
+	margin-top: 25px;
+	height: 35px;
+	background: #357eb8;
+	color: #bcedff;
+	font-weight: bold;
+	background: #0e62a3;
+	cursor: pointer;
+	text-decoration:none;
+}
 input[type="text"],
 input[type="submit"]{
 	-web-kit-appearance:none;
@@ -75,14 +90,6 @@ input[type="text"]{
 	border:1px solid #c8cccf;
 	color:#6a6f77;
 	outline:0;
-}
-input[type="submit"]{
-	margin-top: 25px;
-	height: 35px;
-	background: #357eb8;
-	color: #bcedff;
-	font-weight: bold;
-	font-size: 16px;
 }
 input[type="submit"]:hover{
 	background: #0e62a3;
