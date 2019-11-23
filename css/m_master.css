@@ -16,26 +16,21 @@
 .cover_img{
 	width: 100%;
 	height: 100%;
-	display: flex;
-   justify-content: center;
-   align-items: center;
+	background-size: cover;
 	position: relative;
 	z-index: 3;
-	
-
 }
 .img_slide_count{
 	position: absolute;
 	bottom: 7px;
 	right: 20px;
 	color: #fff;
-	z-index: 3;o
+	z-index: 3;
 	text-shodow: 1px 1px 2px #d3d3d3;
 }
 .current_img{
 	color: #fff;
 	text-shodow: 1px 1px 2px #d3d3d3;
-
 }
 
 .panorama_section{
@@ -44,14 +39,13 @@
 	left: 18px;
 	z-index: 3;
 	width: 105px;
-	height: 45px;
-	line-height: 45px;
+	height: 32px;
+	line-height: 32px;
 	background: #57C2CC;
 	border-radius: 5px;
 	color: #fff;
-	display: block;
-	font-size: 25px;
 	text-align: center;
+	display: block;
 }
 .panorama_section.touched{
     -webkit-transform: scale(0.85,0.85);
@@ -76,8 +70,7 @@
 .head_details_section{
 	height: 110px;
 	background: #fff;
-	border-top: 3px solid #DFDFDF;
-	border-bottom: 0;
+	border: 1px solid #DFDFDF;
 	position: relative;
 	padding: 20px 25px;
 }
@@ -108,7 +101,7 @@
 }
 .detail_price_number{
 	color:#C5A70A;
-	font-size:28px;
+	font-size:18px;
 	margin-right: 2px;
 }
 
@@ -151,8 +144,7 @@
 	position: absolute;
 	left: 35px;
 	top: 0;
-	margin-bottom: 1px;
-	line-height: 70px;
+	line-height: 50px;
 }
 .detail_table p{
 	width: 180px;
@@ -162,7 +154,7 @@
 }
 .detail_table_number{
 	color: #57C2CC;
-	font-size: 28px;
+	font-size: 18px;
 	margin-right: 2px;
 }
 .detail_other_info{
@@ -187,7 +179,7 @@
 	border-right: none;
 }
 .detail_other_info .number_info{
-	font-size: 25px;
+	font-size: 20px;
 	color: rgb(165, 165, 165);
 }
 .detail_other_info .word_dec{
@@ -267,7 +259,7 @@
 }
 .change_red_color{
 	color: #BD9F04;
-	font-size: 19px;
+	font-size: 15px;
 	margin-left: 5px;
 }
 
@@ -281,7 +273,6 @@
 	padding: 10px 20px 10px 0;
 	position: relative;
 	height: 30px;
-	
 }
 .service_title_content.touched{
 	box-shadow: 0 0 15px rgba(68, 127, 152, 0.27);
@@ -314,10 +305,10 @@
 }
 .detail_dec{
 	position: relative;
-	top: 1px;
+	top: 2px;
 }
 .detail_name{
-	font-size: 23px;
+	font-size: 15px;
 	color: black;
 }
 .instruction_dec{
