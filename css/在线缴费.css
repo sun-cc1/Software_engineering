@@ -45,7 +45,7 @@ span {
 	background#eeeeee;
 	margin: auto;
 	height: 300px;
-	padding: 0 20px;
+	padding:20px;
 }
  
 #close {
@@ -57,7 +57,10 @@ span {
 	float: right;
 	font-size: 30px;
 }
- 
+
+.class{
+	padding:30px;
+}
 #foot {
 	padding: 5px 0;
 	text-align: center;
