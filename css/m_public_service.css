@@ -1,0 +1,442 @@
+body{
+    background-color: #f7f6f5;
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none;  /*webkit浏览器*/
+    -ms-user-select: none;   /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+}
+/*head nav*/
+.head_nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.clear_area{
+    width: 100%;
+    height: 40px;
+}
+/*img slide*/
+.img_slide{
+	width: 100%;
+	height: 220px;
+	position: relative;
+}
+.show_slide{
+	width: 100%;
+	height: 100%;
+}
+.cover_img{
+    display: block;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+.head_logo{
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    width: 58px;
+    height: 28px;
+
+    background-size: contain;
+    text-align: center;
+}
+.head_phone{
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: url(../img/mobile/head_phone.png) 0 0 no-repeat;
+    background-size: 25px;
+    background-position: center;
+    border-radius: 4px;
+}
+.head_phone.touched{
+    background-color: rgba(255, 255, 255, 0.15);
+    -webkit-transform: scale(0.96);
+        -ms-transform: scale(0.96);
+         -o-transform: scale(0.96);
+            transform: scale(0.96);
+}
+
+.login{
+    position: absolute;
+    padding: 0px 4px;
+    top: 9px;
+    left: 1350px;
+    width: 58px;
+    height: 28px;
+    color: white;
+    font-size: 17px;
+    text-align:center;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    border-radius: 4px;
+}
+
+.registered{
+    position: absolute;
+    padding: 0px 4px;
+    top: 9px;
+    left: 1420px;
+    width: 58px;
+    height: 28px;
+    color: white;
+    font-size: 17px;
+    text-align:center;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    border-radius: 4px;
+}
+.head_city{
+    position: absolute;
+    padding: 0px 2px;
+    top: 9px;
+    left:70px;
+    width: 58px;
+    height: 28px;
+    color: white;
+    font-size: 17px;
+    text-align:center;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    border-radius: 4px;
+}
+#city_selector.touched .head_city{
+    background: rgba(255, 255, 255, 0.1);
+    text-align:center;
+}
+#city_select{
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    top: 4px;
+    left: 79px;
+    font-size: 15px;
+    opacity: 0;
+}
+.head_city:active,.head_city:hover,.head_city:focus{
+    background: rgba(255, 255, 255, 0.2);
+}
+.head_city:after{
+    content: " ";
+    display: inline-block;
+    width: 10px;
+    height: 9px;
+    background: url(../img/mobile/select_arrow.png) center no-repeat;
+    background-size: contain;
+    margin-left: 4px;
+}
+.main_func{
+    display: block;
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid #EAEAEA;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.02);
+}
+.main_func .each_func{
+    border-bottom: 6px solid transparent;
+    display: inline-block;
+    width: 28%;
+    height: 150px;
+    margin: 0.2%;
+    line-height: 220px;
+    font-size: 25px;
+    position: relative;
+    background: transparent;
+}
+.main_func .each_func.touched{
+    border-bottom: 6px solid #57C2CC;
+    background:#57C2CC;
+}
+.each_func.hotel{
+    color: #E2C353;
+}
+.each_func.gift{
+    color: #5DDEBB;
+}
+.each_func.platform{
+    color: #EC329D;
+}
+.each_func:before{
+    content: " ";
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    top: 5px;
+    left: 47%;
+    margin-left: -28px;
+    -webkit-background-size: 80px;
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.each_func.hotel:before{
+    background-image: url(../images/icon_hotel.png);
+}
+.each_func.gift:before{
+    background-image: url(../images/购物商城.png);
+}
+.each_func.platform:before{
+    background-image: url(../images/交流平台.png);
+}
+
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.block_title{
+    width: 100%;
+    height: 130px;
+    font-size: 55px;
+    color:rgb(27, 25, 25);
+    text-align:center;
+    text-shadow: 10px 7px 10px rgb(236, 50, 157);
+    font-weight:bold;
+    border-bottom-width:5px;
+    border-bottom-style: double;
+    line-height: 130px;
+}
+.Employment{
+    width: 70%;
+    margin-left: 15%;
+    height: 50px;
+    border-bottom: 1px solid #bebdbd;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight:bold;
+    color: #7D7D7D;  
+}
+.security{
+    width: 70%;
+    margin-left: 15%;
+    height: 50px;
+    border-bottom: 1px solid #bebdbd;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight:bold;
+    color: #7D7D7D;  
+}
+.safety{
+    width: 70%;
+    margin-left: 15%;
+    height: 50px;
+    border-bottom: 1px solid #bebdbd;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight:bold;
+    color: #7D7D7D;  
+}
+.separated{
+    width: 90%;
+    height: 5px;
+    margin-left: 5%;
+    border-bottom: solid #727171;  
+    border-bottom-width:3px;
+    border-bottom-style: double;
+}
+
+.tool_list{
+    position: relative;
+    width: 88%;
+    margin: 10px 6%;
+    text-align: center;
+}
+.tool_item{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    height: 190px;
+    width: 30%;
+    line-height: 270px;
+    color: #666666;
+    font-size: 20px;
+}
+.tool_item.touched{
+    color: #f69;
+}
+.tool_item:before{
+    content: " ";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 30px;
+    left: 46%;
+    margin-left: -25px;
+    background-color: #eee;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.tool_item.touched:before{
+    opacity: .8;
+    -webkit-transform: scale(0.98);
+        -ms-transform: scale(0.98);
+         -o-transform: scale(0.98);
+            transform: scale(0.98);
+}
+.tool_item.re-employment:before{
+    background-image: url(../images/就业培训.png);
+    background-size: 50px;
+    background-position: 15px 18px;
+    background-color: rgb(214, 123, 218);
+}
+.tool_item.training:before{
+    background-image: url(../images/就业培训.png);
+    background-size: 50px;
+    background-color: rgb(222, 243, 129);
+}
+.tool_item.information:before{
+    background-image: url(../images/就业信息.png);
+    background-size: 50px;
+    background-position: 15px 18px;
+    background-color: rgb(216, 118, 123);
+}
+.tool_item.jobs:before{
+    background-image: url(../images/岗位开发.png);
+    background-size: 50px;
+    background-color: rgb(176, 255, 140);
+}
+
+.tool_item.entrepreneurship:before{
+    background-image: url(../images/创业服务.png);
+    background-size: 50px;
+    background-color: rgb(92, 204, 189);
+}
+
+.tool_item.retired:before{
+    background-image: url(../images/退休人员.png);
+    background-size: 50px;
+    background-position: 15px 18px;
+    background-color: rgb(89, 93, 202);
+}
+
+.tool_item.facilities:before{
+    background-image: url(../images/公共设施.png);
+    background-size: 50px;
+    background-position: 15px 18px;
+    background-color: #8DE9C0;
+}
+
+.tool_item.nursing:before{
+    background-image: url(../images/老年护理.png);
+    background-size: 50px;
+    background-color: rgb(243, 198, 52);
+}
+
+.tool_item.disputes:before{
+    background-image: url(../images/矛盾纠纷排查.png);
+    background-size: 50px;
+    background-position: 15px 18px;
+    background-color: rgb(116, 226, 116);
+}
+.tool_item.law:before{
+    background-image: url(../images/法制宣传.png);
+    background-size: 50px;
+    background-color: #f0749e;
+}
+.tool_item.fire:before{
+    background-image: url(../images/消防工作.png);
+    background-size: 50px;
+    background-position: 15px 18px;
+    background-color: rgb(134, 110, 182);
+}
+
+.white_block{
+    width: 100%;
+    margin: 12px auto 0;
+    background: #fff;
+    border: 1px solid #EAEAEA;
+    border-width: 1px 0;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.02);
+}
+.white_block.app{
+    position: relative;
+    height: 80px;
+}
+
+.white_block.app.touched{
+    border-color: white;
+    background: #f5f5f5;
+}
+
+.app_icon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgb(236, 114, 226);
+    top: 15px;
+    left: 15px;
+    border-radius: 6px;
+   /* background: url(../images/72x72.png) center no-repeat;*/
+    -webkit-background-size: contain;
+            background-size: contain;
+}
+.app_tit{
+    position: absolute;
+    top: 15px;
+    left: 73px;
+    font-size: 18px;
+    color: #191919;
+}
+.app_dec{
+    position: absolute;
+    top: 38px;
+    left: 73px;
+    color: #acacac;
+    font-size: 15px;
+}
+
+.download_btn{
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 26px;
+    background: #57C2CC;
+    border-radius: 4px;
+    bottom: 27px;
+    right: 12px;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+}
+
+/*bottom nav*/
+.bottom_nav_content{
+	width: 100%;
+	height: 80px;
+	background: #EDEDED;
+	position: relative;
+	z-index: 5;
+	margin-top: 12px;
+}
+
+.bottom_phone_content{
+    width: 100%;
+    font-size: 20px;
+	text-align: center;
+	position: relative;
+	top: 15px;
+}
+.tel_number{
+    color: #57C2CC;
+    font-size: 20px;
+	margin-left: 10px;
+}
+.bottom_remark{
+	text-align: center;
+	width: 100%;
+	color: #B3B2B2;
+	position: relative;
+	top: 18px;
+	font-size: 14px;
+}
