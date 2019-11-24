@@ -1,0 +1,253 @@
+
+
+
+/*---头部---*/
+.header {
+}
+
+.header .banner {
+	margin: 0 auto 1px;
+	width: 1800px;
+	height: 260px;
+	background: url(../images/photo8.jpg);
+}
+
+
+/*---内容区域---*/
+.container {
+	margin: 24px auto 0;
+	width: 1024px;
+}
+
+.container h1 {
+	height: 38px;
+	line-height: 38px;
+	padding: 0 0 0 45px;
+	background-color: #eee;
+	color: #549ed9;
+	font-size: 20px;
+}
+
+.container h1 a {
+	color: #003B75;
+	float: right;
+	cursor: pointer;
+	font-size: 14px;
+	padding: 0 3px 0 0;
+}
+
+.container table {
+	width: 100%;
+	margin: 10px 0 0 0;
+}
+
+.container th {
+	border-bottom: 1px solid #00a0e9;
+	color: #020202;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.container th.pth {
+	text-align: left;
+	padding: 0 0 0 62px;
+}
+
+.container td {
+	padding: 20px 0;
+	border-bottom: 2px solid #e1e3e4;
+}
+
+.container .lr_d0 {
+}
+
+.container .lr_d0 .l_c {
+	float: left;
+	width: 350px;
+	border-right: 1px dashed #35b4ee;
+}
+
+.container .lr_d0 .r_c {
+	float: left;
+	width: 673px;
+}
+
+.container .rl_d0 {
+	margin: 30px 0 0 0;
+	display: inline-block;
+}
+
+.container .rl_d0 .l_c {
+	float: left;
+	width: 1004px;
+}
+
+.container .rl_d0 .r_c {
+	float: left;
+	width: 420px;
+}
+
+.container .chart {
+	margin: 30px 0 0px;
+}
+}
+
+/*---通道管理---*/
+.container .lr_d0 .l_c .bxtd {
+	margin: 0 21px 0 0;
+}
+
+.container .lr_d0 .l_c .bxtd p {
+	padding: 10px 0 20px 0;
+	text-align: center;
+	font-size: 22px;
+}
+
+.container .lr_d0 .l_c .bxtd p a:hover {
+	color: #fff;
+}
+
+/*---通道管理---*/
+.container .lr_d0 .l_c .tdgl {
+	margin: 0 21px 0 0;
+}
+
+.container .lr_d0 .l_c .tdgl ul {
+	padding: 0 0 0 8px;
+}
+
+.container .lr_d0 .l_c .tdgl li {
+	float: left;
+	margin: 15px 7px 0 0;
+	font-size: 18px;
+	text-align: center;
+}
+
+.container .lr_d0 .l_c .tdgl li a {
+	line-height: 70px;
+	color: #fff;
+}
+
+/*---服务电话---*/
+.container .lr_d0 .l_c .fwdh {
+	margin: 0 21px 0 0;
+}
+
+.container .lr_d0 .l_c .fwdh h2 {
+	clear: both;
+	font-weight: normal;
+	margin: 0 5px;
+	padding: 5px 5px;
+	border-bottom: 1px dotted #ef7100;
+	display: none;
+}
+
+.container .lr_d0 .l_c .fwdh ul {
+	padding: 0 0 0 0px;
+	margin: 0 0 0 3px;
+}
+
+.container .lr_d0 .l_c .fwdh li {
+	width: 151px;
+	float: left;
+	margin: 10px 0px 0 0px;
+	padding: 0 0 0 10px;
+	font-size: 18px;
+	text-align: left;
+	border-bottom: 1px dotted #e3e4e5;
+}
+
+.container .lr_d0 .l_c .fwdh li a {
+	color: #333;
+	font-size: 12px;
+	float: left;
+}
+
+.container .lr_d0 .l_c .fwdh li span {
+	color: #333;
+	font-size: 12px;
+	float: right;
+}
+
+
+/*---通知公告---*/
+.container .lr_d0 .r_c .tzgg {
+	margin: 0 0 0 40px;
+}
+
+.container .lr_d0 .r_c .tzgg td a {
+	float: left;
+	width: 530px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.container .lr_d0 .r_c .tzgg td span {
+	float: left;
+	display: inline-block;
+	width: 12px;
+	height: 16px;
+	background: url(../images/bluetriangle.gif) 0 1px no-repeat;
+}
+
+/*---日常报修---*/
+.container .rl_d0 .l_c .rcbx {
+}
+
+.container .rl_d0 .l_c .rcbx td {
+	text-align: center;
+}
+
+.container .rl_d0 .l_c .rcbx td.Aleft {
+	text-align: center;
+}
+
+.container .rl_d0 .l_c .rcbx td a {
+	display: inline-block;
+	width: 320px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+
+/*---详细内容---*/
+.dcont {
+	margin: 25px auto;
+	width: 1024px;
+}
+
+.dcont h1 {
+	text-align: center;
+	font-size: 25px;
+}
+
+.dcont .h_c {
+	margin: 35px 0 25px 0;
+	font-size: 18px;
+	border-bottom: 1px solid #549ed9;
+}
+
+.dcont .h_c span {
+	float: right;
+}
+
+.dcont .cont {
+	font-size: 15px;
+}
+
+/*---分页---*/
+.page_bc {
+	margin: 20px 0;
+}
+
+.page_br {
+	position: absolute;
+	right: 15px;
+	bottom: 0;
+}
+
+.page_br .pg {
+	float: right;
+}
