@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>维修师傅</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="red-translucent" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" href="css/swiper.css">
+<link rel="stylesheet" href="css/m_common.css">
+<link rel="stylesheet" href="css/m_search.css">
+<link rel="stylesheet" href="css/m_footer_nav.css">
+</head>
+<body>
+<input type="hidden" id="hotel_district">
+<input type="hidden" id="hotel_type">
+<input type="hidden" id="hotel_tag">
+    <!-- head nav -->
+    <header class="head_nav">
+        <div class="head_title">维修师傅</div>
+        <div class="turn_back touch"></div>
+    </header>
+    <div class="clear_area"></div>
+
+    <!--  hotel list -->
+    <div class="hotel_list">
+
+        <div class="each_hotel touch" onclick="openHotel()">
+            <div class="hotel_img">
+                <img src="images/photo1.png" alt="" >
+            </div>
+            <div class="hotel_name">[维修范围:芝罘区]  刘师傅</div>
+            <div class="hotel_price">服务地址：xx小区</div>
+            <div class="hotel_tablenum">经验：1-3</div>
+            <div class="hotel_comment">评价( 23 )</div>
+        </div>
+        <div class="each_hotel touch" onclick="openHotel()">
+            <div class="hotel_img">
+                    <img src="images/photo7.jpg" alt="" >
+            </div>
+            <div class="hotel_name">[维修范围:福山区]  康师傅</div>
+            <div class="hotel_price">服务地址：xx小区</div>
+            <div class="hotel_tablenum">经验：1-2</div>
+            <div class="hotel_comment">评价( 15 )</div>
+        </div>
+        <div class="each_hotel touch" onclick="openHotel()">
+            <div class="hotel_img">
+                    <img src="images/photo3.jpg" alt="" >
+            </div>
+            <div class="hotel_name">[维修范围:莱山区]  林师傅</div>
+            <div class="hotel_price">服务地址：xx小区</div>
+            <div class="hotel_tablenum">经验：2-4</div>
+            <div class="hotel_comment">评价( 51 )</div>
+        </div>
+        <div class="each_hotel touch" onclick="openHotel()">
+            <div class="hotel_img">
+                <img src="images/photo4.jpg" alt="" >
+            </div>
+            <div class="hotel_name">[维修范围:芝罘区]  李师傅</div>
+            <div class="hotel_price">服务地址：xx小区</div>
+            <div class="hotel_tablenum">经验：2-4</div>
+            <div class="hotel_comment">评价( 48 )</div>
+        </div>
+        <div class="each_hotel touch" onclick="openHotel()">
+            <div class="hotel_img">
+                    <img src="images/photo5.jpg" alt="" >
+            </div>
+            <div class="hotel_name">[维修范围:福山区]  宋师傅</div>
+            <div class="hotel_price">服务地址：xx小区</div>
+            <div class="hotel_tablenum">经验：1-2</div>
+            <div class="hotel_comment">评价( 20 )</div>
+        </div>
+        <div class="each_hotel touch" onclick="openHotel()">
+            <div class="hotel_img">
+                    <img src="images/photo6.jpg" alt="" >
+            </div>
+            <div class="hotel_name">[维修范围:莱山区]  刘师傅</div>
+            <div class="hotel_price">服务地址：xx小区</div>
+            <div class="hotel_tablenum">经验：2-4</div>
+            <div class="hotel_comment">评价( 45 )</div>
+        </div>
+<!--		<c:if test="${hotels.size()<=0 }"><div class="no_result"></div><div  class="go_other_hotel">抱歉,暂时没有找到符合您条件的.可试试其他条件,或<a style="color:#f69;" href="/m/hotel/0/consultSchedule">提交咨询</a>专业顾问为您服务。</div></c:if>-->
+    </div>
+
+    <div class="clear_area"></div>
+
+    <div class="list_bottom mark_point">
+        <div class="page_num">1/1</div>
+        <a class="prev_page touch" href="">上一页</a>
+        <a class="next_page touch" href="">下一页</a>
+    </div>
+    <div id="footer_clear_area" class="clear_area"></div>
+    
+    <div class="filter_footer">
+        <div class="flt_btns">
+            <a class="flt_btn touch filter ">筛选</a>
+        </div>
+    </div>
+
+   <!-- filter-->
+    <div class="head_nav filter">
+        <div class="head_title">筛选</div>
+        <div id="filter_clear" class="head_clear touch">清空</div>
+        <div id="filter_back" class="turn_back touch"></div>
+    </div>
+    <!--使用筛选条件未完善-->
+    <a href="m_search.html" class="fitler_footer_btn touch">使用筛选条件</a>
+
+    <div id="filter_p" class="sub-page">
+        <div class="clear_area"></div>
+        
+        <div class="filter_content">
+            <div class="filter_select">
+                <div class="filter_head touch">
+                    <div class="filter_select_tit">所在区域</div>
+                    <div class="filter_select_val filter_select_val_district">不限</div>
+                </div>
+                <div class="filter_select_list">
+                    <div class="filter_select_item filter_select_item_district touch active">不限</div>
+                    <div class="filter_select_item filter_select_item_district touch  ">芝罘区</div>
+                    <div class="filter_select_item filter_select_item_district touch  ">莱山区</div>
+                    <div class="filter_select_item filter_select_item_district touch  ">福山区</div>
+                    <div class="filter_select_item filter_select_item_district touch  ">牟平区</div>
+                </div>
+            </div>
+            <div class="filter_select">
+                <div class="filter_head touch">
+                    <div class="filter_select_tit">服务类型</div>
+                    <div class="filter_select_val filter_select_val_type" >不限</div>
+                </div>
+                <div class="filter_select_list">
+                    <div class="filter_select_item filter_select_item_type touch active ">不限</div>
+                    <div class="filter_select_item filter_select_item_type touch ">空调维修</div>
+                    <div class="filter_select_item filter_select_item_type touch ">电视机维修</div>
+                    <div class="filter_select_item filter_select_item_type touch ">热水器维修</div>
+                    <div class="filter_select_item filter_select_item_type touch ">冰箱维修</div>
+                    <div class="filter_select_item filter_select_item_type touch ">水电路维修</div>
+                    <div class="filter_select_item filter_select_item_type touch ">其他维修</div>
+                </div>
+            </div>
+            <div class="filter_select">
+                <div class="filter_head touch">
+                    <div class="filter_select_tit">经验</div>
+                    <div class="filter_select_val filter_select_val_tag">不限</div>
+                </div>
+                <div class="filter_select_list">
+                    <div class="filter_select_item filter_select_item_tag touch  active">不限</div>
+                    <div class="filter_select_item filter_select_item_tag touch  ">0-1年</div>
+                    <div class="filter_select_item filter_select_item_tag touch  e">1-2年</div>
+                    <div class="filter_select_item filter_select_item_tag touch  ">2-3年</div>
+                    <div class="filter_select_item filter_select_item_tag touch  ">3年以上</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!--footer-->
+    <div class="bottom_nav_content">
+        <img src="images/photo2.jpg" alt="Pulpit rock" width="100%" height="200">
+        <a class="bottom_link go_index touch" href="m_index.html">首页</a>  
+		<a class="bottom_link feedback_link touch" href="/m/hotel/userFeedback">意见反馈</a>
+		<a class="bottom_link top_link touch">TOP</a>
+		<a class="bottom_download_content touch" href=''>
+			<div class="download_app_icon"></div>
+			<div class="download_title">社区服务助手app</div>
+			<div class="now_download">立即下载</div>
+		</a>
+		<div class="bottom_phone_content">免费咨询热线 :<a class="tel_number" href="tel://17865500000">17865500000</a></div>
+		<div class="bottom_remark">@2018 社区O2O助手 鲁ICP备&nbsp;xxxxx号-x</div>
+	</div>  
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/idangerous.swiper.min.js"></script>
+<script src="js/jquery.lazyload.min.js"></script>
+<script src="js/Touch.js"></script>
+<script src="js/m_search.js"></script>
+<script src="js/m_url.js"></script>
+<script src="js/m_footer_nav.js"></script>
+</html>
