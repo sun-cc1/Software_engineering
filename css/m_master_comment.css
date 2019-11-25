@@ -1,0 +1,211 @@
+.hotel_header_comment{
+	width: 100%;
+	height: 88px;
+	background: #fff;
+	border-bottom: 1px solid #d3d3d3;
+}
+.hotel_header_comment_center{
+	width: 100%;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -o-box;
+}
+.comment_detail{
+	box-flex: 1;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-o-box-flex: 1;
+	position: relative;
+	top: 20px;
+}
+.comment_detail p{
+	text-align: center;
+	margin-top: 3px;
+}
+.comment_detail_number{
+	font-size: 25px;
+}
+
+.hotel_comment_nav{
+	width: 420px;
+	margin: 20px auto;
+	height: 40px;
+	border: 1px solid #E27328;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.hotel_comment_nav li{
+	float: left;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #E27328;
+	border-right: 1px solid #E27328;
+}
+.hotel_comment_nav li a{
+	color: #E27328;
+	display: block;
+}
+.hotel_comment_nav li:last-child{
+	border-right: none;
+}
+.comment_number{
+	color: #E27328;
+}
+.hotel_comment_nav li .on_comment_number{
+	background: #ff6699;
+	color: #fff;
+}
+
+.hotel_comment_content{
+
+}
+.hotel_comment_detail{
+	width: 100%;
+}
+.hotel_comment_detail li{
+	position: relative;
+	padding: 25px 0 25px 36px;
+	min-height: 71px;
+	border-top: 1px solid #F4F4F4;
+	border-bottom: 1px solid #F4F4F4;
+	margin-bottom: 20px;
+	background: #fff;
+}
+.comment_praise_people_icon{
+	position: absolute;
+	top: 10px;
+	left: 12px;
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/cat_head_8.png);
+	background-size: cover;
+}
+.comment_detail_title{
+	font-size: 16px;
+    color: black;
+    width: 142px;
+    margin-top: 2px;
+    margin-left: 36px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.comment_detail_dec{
+	width: 206px;
+	margin-top: 15px;
+	color: black;
+	word-wrap: break-word;
+	margin-left: 36px;
+}
+.comment_date{
+	position: absolute;
+	right: 15px;
+	top: 25px;
+	color: #B2B2B2;
+}
+.comment_praise{
+	position: absolute;
+	right: 16px;
+	top: 68px;
+}
+.comment_praise_icon{
+	width: 22px;
+	height: 20px;
+	background-size: cover;
+	background-image: url(/img/mobile/dianzan_stroke.png);
+}
+.comment_isPraised{
+    background-image: url(/img/mobile/dianzan.png);
+}
+.comment_praise_number{
+	margin-top: 3px;
+}
+
+.comment_bottom_content{
+	background: #fff;
+	width: 100%;
+	height: 60px;
+	border: 1px solid #F4F4F4;
+	position: fixed;
+	bottom: 0;
+	z-index: 3;
+}
+.comment_bottom_btn_content{
+	position: absolute;
+	width: 100%;
+	top: 14px;
+	text-align: center;
+}
+.comment_bottom_dec{
+	display: inline-block;
+	color: #B3B1B1;
+	font-size: 15px;
+	margin-right: 20px;
+}
+.comment_btn{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	background: #ff6699;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 3px;
+}
+.comment_btn.touched{
+	background-color: #ff8eb4;
+    -webkit-transform: scale(0.85,0.85);
+        -ms-transform: scale(0.85,0.85);
+         -o-transform: scale(0.85,0.85);
+            transform: scale(0.85,0.85);
+}
+.see_more_comment{
+	width: 100%;
+	height: 66px;
+	background: #E2E2E2;
+	color:	#898989;
+	text-align: center;
+	line-height: 66px;
+	border-radius: 3px;
+	margin-top: -19px;
+}
+.see_more_comment.touched{
+    -webkit-transform: scale(0.85,0.85);
+        -ms-transform: scale(0.85,0.85);
+         -o-transform: scale(0.85,0.85);
+            transform: scale(0.85,0.85);
+}
+
+.comment_bottom_content{
+	position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    /* border-top: 1px solid #E2E2E2; */
+    z-index: 5;
+    background: #57C2CC;
+}
+.bottom_icon {
+	text-align: center;
+	color: #fff;
+	background-size: 19px;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	box-flex: 1;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-o-box-flex: 1;
+}
+.bottom_icon.touched{
+	box-shadow: 0 0 15px rgba(68, 127, 152, 0.27);
+}
