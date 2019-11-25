@@ -1,74 +1,76 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title> 订单查询 </title>
-<style type="text/css">
-html,body {
-    height: 100%;
-}
-.dialog {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-left: 0px;
-    margin-top: 0px;
-    width: 0px;
-    height: 0px;
-    overflow: hidden;
-    border: 1px solid #999;
-    text-align: center;
-    border-radius: 25px;
-    box-shadow: 5px 5px 5px #999;
-    background: #88f;
-    transition: all 0.3s;
-}
-.dialog .close {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    margin-left: -25px;
-    width: 50px;
-    height: 20px;
-    border: 1px solid #999;
-    background: #339;
-    color: #fff;
-    text-align: center;
-}
-#dialogswitch {
-    display: none;
-}
-#dialogswitch:checked+.dialog {
-    margin-left: -250px;
-    margin-top: -250px;
-    width: 500px;
-    height: 300px;
-}
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <title> 订单查询 </title>
+        <style type="text/css">
+        html,body {
+            height: 100%;
+        }
+        .click{
+            position: fixed;
+            top: 50%;
+            left: 35%;
+            font-size: 40px;
+        }
+        .dialog {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-left: 0px;
+            margin-top: 0px;
+            width: 0px;
+            height: 0px;
+            overflow: hidden;
+            border: 1px solid #999;
+            text-align: center;
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px #999;
+            background: #88f;
+            transition: all 0.3s;
+        }
+        .dialog .close {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -25px;
+            width: 50px;
+            height: 20px;
+            border: 1px solid #999;
+            background: #339;
+            color: #fff;
+            text-align: center;
+        }
+        #dialogswitch {
+            display: none;
+        }
+        #dialogswitch:checked+.dialog {
+            margin-left: -250px;
+            margin-top: -250px;
+            width: 500px;
+            height: 300px;
+        }
 
-   body {
-
-           background:url("在线缴费背景.jpg");
-
-         }
-
-        
-</style>
-</head>
+        body {
+            background:url("images/在线缴费背景.jpg");
+        }
+        </style>
+    </head>
 <body>
-<label for="dialogswitch">点击可查看已经完成的订单</label>
-<input type="checkbox" id="dialogswitch" />
+    <label class="click" for="dialogswitch">点击可查看已经完成的订单</label>
+    <input type="checkbox" id="dialogswitch" />
 
-<div class="dialog">
-    <h3>已经完成的订单</h3>
-   2018.11.15 订单1已完成 
-   
-   2018年12月15日 订单2已完成
-   
-   2019年3 月10日  订单1已完成
+    <div class="dialog">
+        <h3>已经完成的订单</h3>
+            2018.11.15 订单1已完成 
+            
+            2018年12月15日 订单2已完成
+            
+            2019年3 月10日  订单1已完成
 
- 2019年5 月9 日   订单4已完成
-    <label class="close" for="dialogswitch"><a href="在线缴费与订单查询.html">关闭</a></label>
-</div>
+            2019年5 月9 日   订单4已完成
+        <label class="close" for="dialogswitch"><a href="在线缴费与订单查询.html">关闭</a></label>
+    </div>
 </body>
 </html>

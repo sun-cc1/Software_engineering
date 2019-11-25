@@ -144,10 +144,9 @@ table {
 
 .linkBtn_blue_5 {
 	display: inline-block;
-	height: 52px;
+	height: 100px;
 	line-height: 52px;
-	background: url(../images/btn.gif) no-repeat 0 -1156px;
-	color: #fff;
+	color: rgb(131, 61, 61);
 	padding: 0 0 0 5px;
 }
 
@@ -159,123 +158,6 @@ table {
 	cursor: pointer;
 }
 
-.linkBtn_white_1 {
-	display: inline-block;
-	height: 24px;
-	line-height: 24px;
-	background: url(../images/btn.gif) no-repeat 0 -96px;
-	color: #666;
-	padding: 0 0 0 2px;
-}
 
-.linkBtn_white_1 span {
-	float: left;
-	display: inline;
-	padding: 0 12px 0 10px;
-	background: url(../images/btn.gif) no-repeat right -120px;
-	cursor: pointer;
-}
 
-.linkBtn_white_1:hover {
-	text-decoration: none;
-	color: #444;
-	background-position: 0 -144px;
-}
-
-.linkBtn_white_1:hover span {
-	background-position: right -168px;
-}
-
-.linkBtn_white_2 {
-	display: inline-block;
-	height: 24px;
-	line-height: 24px;
-	background: url(../images/btn.gif) no-repeat 0 -240px;
-	color: #666;
-	padding: 0 0 0 2px;
-}
-
-.linkBtn_white_2 span {
-	float: left;
-	display: inline;
-	padding: 0 12px 0 10px;
-	background: url(../images/btn.gif) no-repeat right -264px;
-	cursor: pointer;
-}
-
-.linkBtn_white_2:hover {
-	text-decoration: none;
-	color: #444;
-	background-position: 0 -192px;
-}
-
-.linkBtn_white_2:hover span {
-	background-position: right -216px;
-}
-
-.linkBtn_white_3 {
-	display: inline-block;
-	height: 24px;
-	line-height: 24px;
-	background: url(../images/btn.gif) no-repeat 0 -192px;
-	color: #666;
-	padding: 0 0 0 2px;
-}
-
-.linkBtn_white_3 span {
-	float: left;
-	display: inline;
-	padding: 0 12px 0 10px;
-	background: url(../images/btn.gif) no-repeat right -216px;
-	cursor: pointer;
-}
-
-.linkBtn_white_3:hover {
-	text-decoration: none;
-	color: #444;
-}
-
-.linkBtn_white_4 {
-	display: inline-block;
-	height: 28px;
-	line-height: 28px;
-	background: url(../images/btn.gif) no-repeat 0 -400px;
-	color: #666;
-	padding: 0 0 0 2px;
-}
-
-.linkBtn_white_4 span {
-	float: left;
-	display: inline;
-	padding: 0 12px 0 10px;
-	background: url(../images/btn.gif) no-repeat right -428px;
-	cursor: pointer;
-}
-
-.linkBtn_white_4:hover {
-	text-decoration: none;
-	color: #444;
-}
-
-.linkBtn_white_5 {
-	display: inline-block;
-	height: 28px;
-	line-height: 28px;
-	background: url(../images/btn.gif) no-repeat 0 -664px;
-	color: #666;
-	padding: 0 0 0 2px;
-}
-
-.linkBtn_white_5 span {
-	float: left;
-	display: inline;
-	padding: 0 12px 0 10px;
-	background: url(../images/btn.gif) no-repeat right -692px;
-	cursor: pointer;
-}
-
-.linkBtn_white_5:hover {
-	text-decoration: none;
-	color: #444;
-}
 
