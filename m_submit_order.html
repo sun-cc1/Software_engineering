@@ -1,0 +1,87 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="red-translucent" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/m_common.css">
+    <link rel="stylesheet" href="css/m_submit_order.css"/>
+</head>
+<body ng-app="baseInfo" ng-controller="baseInfoController">
+<!-- head nav -->
+<header class="head_nav">
+    <div class="turn_back touch" onclick="back()"></div>
+    <div class="head_title">刘师傅</div>
+</header>
+<div class="input_infor">
+    <ul class="input_form">
+        <li>
+            <div class="infor_name">报修人</div>
+            <input type="text" class="data_input" placeholder="必填" ng-model="user_name">
+        </li>
+        <li>
+            <div class="infor_name">联系号码</div>
+            <input type="number" class="data_input" placeholder="必填" ng-model="user_tel">
+        </li>
+        <li>
+
+            <span class="select_choice_name province_name" ng-bind="provinceName"></span>
+            <span class="select_choice_name city_name" ng-bind="cityName"></span>
+            <span class="select_choice_name district_name" ng-bind="districtName"></span>
+            <select class="select_choice" id="province" ng-model="province_selected" ng-options="pro.name for pro in province" ng-change="changeProvince()">
+            </select>
+            <select class="select_choice" id="city" ng-model="city_selected" ng-options="c.name for c in city_list"  ng-change="changeCity()">
+
+            </select>
+            <select class="select_choice" id="district" ng-model="district_selected" ng-options="d.name for d in district_list"  ng-change="changeDistrict()">
+
+            </select>
+
+           
+        </li>
+        <li>
+            <div class="infor_name">详细地址</div>
+            <input type="text" class="data_input" placeholder="(必填)例如:大街10号" ng-model="user_address">
+        </li>
+        <li>
+            <div class="infor_name">预约维修时间</div>
+            <input type="date" class="data_input" ng-model="order_date">
+        </li>
+        <li>
+            <div class="infor_name">维修项目</div>
+            <select type="text" class="data_input" >
+                <option selected="true">空调维修</option>
+                <option selected="true">电视机维修</option>
+                <option selected="true">热水器维修</option>
+                <option selected="true">冰箱维修</option>
+                <option selected="true">水电路维修</option>
+                <option selected="true">其他维修</option>
+            </select>
+        </li>
+        <li style="height: 100px;margin-bottom: 60px; line-height: 90px;">
+            <div class="infor_name">故障描述</div>
+            <textarea class="data_textarea" ng-model="maste_dec"></textarea>
+        </li>
+    </ul>
+</div>
+<div class="index_bottom">
+    <div class="bottom_btn save_btn" ng-click="saveBtn()">确定</div>
+    <div class="bottom_btn cancle_btn" ng-click="clearBtn()">清空</div>
+</div>
+<div class="mask" ng-show="show_mask" ng-click="closeMask()">
+    <div class="warn_box" ng-bind="warn_dec"></div>
+</div>
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/m_submit_order.js"></script>
+
+<script>
+function back(){
+		 history.go(-1);
+	 }
+</script>
+</html>
