@@ -27,11 +27,11 @@
             <input type="number" class="data_input" placeholder="必填" ng-model="user_tel">
         </li>
         <li>
-
             <span class="select_choice_name province_name" ng-bind="provinceName"></span>
             <span class="select_choice_name city_name" ng-bind="cityName"></span>
             <span class="select_choice_name district_name" ng-bind="districtName"></span>
             <select class="select_choice" id="province" ng-model="province_selected" ng-options="pro.name for pro in province" ng-change="changeProvince()">
+                
             </select>
             <select class="select_choice" id="city" ng-model="city_selected" ng-options="c.name for c in city_list"  ng-change="changeCity()">
 
