@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="red-translucent" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="css/m_common.css"/>
+    <link rel="stylesheet" href="css/m_order.css"/>
+    <title>我的订单</title>
+</head>
+<body>
+<!-- head nav -->
+<header class="head_nav">
+    <div class="turn_back touch" onclick="back()"></div>
+    <div class="head_title">我的订单</div>
+</header>
+<div class="order_nav">
+    <div class="now_order on_order">正在进行的订单</div>
+    <div class="now_order">已完成的订单</div>
+</div>
+<div class="order_section">
+    <div class="now_order_content" style="display: block;">
+       <table class="order_list">
+           <tr>
+                <th>维修类型</th>
+                <th>联系号码</th>
+                <th>维修人员</th>
+                <th>维修时间</th>
+           </tr>
+           <tr>
+               <td>空调</td>
+               <td>17800000000</td>
+               <td>刘师傅</td>
+               <td>2018-12-01</td>
+           </tr>
+       </table>
+    </div>
+    <div class="now_order_content" >
+        <table class="order_list">
+            <tr>
+                <th>维修类型</th>
+                <th>联系号码</th>
+                <th>维修人员</th>
+                <th>维修时间</th>
+            </tr>
+            <tr>
+                <td>空调</td>
+                <td>17800000000</td>
+                <td>刘师傅</td>
+                <td>2018-12-01</td>
+            </tr>
+            <tr>
+                <td>空调</td>
+                <td>17800000000</td>
+                <td>刘师傅</td>
+                <td>2018-12-01</td>
+            </tr>
+            <tr>
+                <td>空调</td>
+                <td>17800000000</td>
+                <td>刘师傅</td>
+                <td>2018-12-01</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/Touch.js"></script>
+<script src="js/m_order.js"></script>
+</html>
